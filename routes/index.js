@@ -12,11 +12,4 @@ router.use("/orders", routerOrder);
 router.use("/customers", routerCustomer);
 router.use("/categories", routerCategory);
 
-router.use((req, res) => {
-  res.status(404).json({
-    statusCode: 404,
-    message: "Not Found",
-  });
-});
-
 export default router;
